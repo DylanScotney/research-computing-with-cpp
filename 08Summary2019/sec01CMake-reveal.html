@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <title>C++ Builder</title>
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="http://lab.hakim.se/reveal-js/css/reveal.min.css"/>
+    <style type="text/css">code{white-space: pre;}</style>
+    <link rel="stylesheet" href="http://lab.hakim.se/reveal-js/css/theme/night.css"/>
+    <link rel="stylesheet" href="/research-computing-with-cpp//css/ucl_reveal.css"/>
+    <link rel="stylesheet" href="/research-computing-with-cpp//site-styles/reveal.css"/>
+  <link rel="stylesheet" media="print" href="http://lab.hakim.se/reveal-js/css/print/pdf.css" />
+  <!--[if lt IE 9]>
+  <script src="http://lab.hakim.se/reveal-js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section>
+    <h1 class="title">C++ Builder</h1>
+    <h3 class="date"></h3>
+</section>
+
+<section><section id="cmake---cross-platform-building" class="titleslide slide level2"><h1>CMake - cross-platform building</h1></section><section id="cross-platform-is-common" class="slide level3">
+<h1>Cross-platform is common</h1>
+<ul>
+<li>Researchers deal with small prototypes</li>
+<li>Develop on Windows/Mac, deploy to Linux cluster</li>
+<li>i.e. cross-platform is common</li>
+<li>Researchers have little programming support</li>
+</ul>
+</section><section id="cmake-summary" class="slide level3">
+<h1>CMake summary</h1>
+<ul>
+<li>CMake generates Makefiles / Visual Studio solution files.</li>
+<li><code>make</code> or Visual Studio program runs your compiler</li>
+<li>CMake is NOT compiling your code</li>
+</ul>
+<p>So: Learn 1 build system (CMake), and general build code for each platform (Windows, Linux, Mac)</p>
+</section><section id="going-forward" class="slide level3">
+<h1>Going Forward</h1>
+<ul>
+<li>There is a CMake book, but its outdated</li>
+<li>Learn by example</li>
+<li>On this course, I gave as much CMake as I could</li>
+<li>But look at commit log for <a href="https://github.com/MattClarkson/CMakeCatchTemplate">CMakeTemplate</a>, as I'm still hacking CMake stuff myself.</li>
+</ul>
+</section><section id="resources" class="slide level3">
+<h1>Resources</h1>
+<ul>
+<li><a href="https://cmake.org/">CMake homepage</a></li>
+<li><a href="https://github.com/MattClarkson/CMakeHelloWorld">CMake hello world</a></li>
+<li><a href="https://github.com/MattClarkson/CMakeLibraryAndApp">CMake library and app</a></li>
+<li><a href="https://github.com/MattClarkson/CMakeCatch2">CMake with Catch2</a></li>
+<li><a href="https://github.com/MattClarkson/CMakeCatchTemplate">CMakeTemplate with SuperBuild / MetaBuild</a> and the associated <a href="https://github.com/MattClarkson/CMakeTemplateRenamer">CMakeTemplateRenamer</a> to generate new projects.</li>
+</ul>
+</section></section>
+    </div>
+  </div>
+
+  <script src="http://lab.hakim.se/reveal-js/lib/js/head.min.js"></script>
+  <script src="http://lab.hakim.se/reveal-js/js/reveal.min.js"></script>
+
+  <script>
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        theme: 'night', // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: 'http://lab.hakim.se/reveal-js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'http://lab.hakim.se/reveal-js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: 'http://lab.hakim.se/reveal-js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+//          { src: 'http://lab.hakim.se/reveal-js/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; }, }
+//          { src: 'http://lab.hakim.se/reveal-js/plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+]});
+    </script>
+  </body>
+</html>

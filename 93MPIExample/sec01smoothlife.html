@@ -1,0 +1,462 @@
+
+
+
+
+
+<!DOCTYPE html>
+<!--[if IE 7]> <html lang="en" class="lt-ie9 lt-ie8 no-js"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="lt-ie9 no-js"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset=utf-8 />
+    <meta name="author" content="UCL" />
+    <meta name="description" content="UCL Homepage" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- social meta -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@uclnews">
+    <meta name="twitter:title" content="UCL - London's Global University">
+    <meta name="twitter:description" content="UCL (University College London) is London's leading multidisciplinary university, with 8,000 staff and 25,000 students.">
+    <meta name="twitter:creator" content="@UCLWAMS">
+    <meta name="twitter:image:src" content="http://www.ucl.ac.uk/visual-identity/logos/standalone.png">
+    <meta property="og:image" content="http://www.ucl.ac.uk/visual-identity/logos/standalone.png" />
+    <meta property="og:title" content="UCL - London's Global University" />
+    <meta property="og:url" content="http://www.ucl.ac.uk" />
+    <meta property="og:site_name" content="UCL" />
+    <meta property="og:description" content="UCL (University College London) is London's leading multidisciplinary university, with 8,000 staff and 25,000 students." />
+    <meta property="og:type" content="website" />
+    <meta property="og:profile_id" content="uclofficial" />
+    <!-- end social meta -->
+
+  <title>Smooth Life</title>
+
+  <link href="/research-computing-with-cpp/css/screen.min.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <link href="/research-computing-with-cpp/css/jekyll-styles.css" rel="stylesheet" type="text/css">
+  <link href="/research-computing-with-cpp/site-styles/local_styles.css" rel="stylesheet" type="text/css">
+  <link href="/research-computing-with-cpp/site-styles/ipython.css" rel="stylesheet" type="text/css">
+
+  <link rel="shortcut icon" href="/research-computing-with-cpp/images/favicon.ico" />
+    <link rel="apple-touch-icon-precomposed" href="/research-computing-with-cpp/favicon-152.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="msapplication-TileImage" content="/research-computing-with-cpp/favicon-144.png">
+
+  <script src="/research-computing-with-cpp/js/lib/modernizr-custom.js"></script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+            processEscapes: true,
+            processEnvironments: true
+        },
+        // Center justify equations in code and markdown cells. Elsewhere
+        // we use CSS to left justify single line equations in code cells.
+        displayAlign: 'center',
+        "HTML-CSS": {
+            styles: {'.MathJax_Display': {"margin": 0}},
+            linebreaks: { automatic: true }
+        }
+    });
+    </script>
+
+    <script>
+      var cuttingTheMustard = document.querySelector && window.localStorage && window.addEventListener;
+
+      Modernizr.load({
+        //cutting the mustard as used by the BBC
+        test: cuttingTheMustard
+        //if old browser load the shiv
+        ,
+        nope: [
+          '/research-computing-with-cpp/js/lib/html5shiv-printshiv.min.js', '/research-computing-with-cpp/js/lib/respond.min.js'
+        ]
+      });
+      //set conditional assets for main.js
+      var globalSiteSpecificVars = {
+        pathToJquery: "/research-computing-with-cpp/js/lib/jquery-1.9.1.min",
+        googleAnalyticsIdsArray: [] //specify array of site specific id's NOT UCL generic UA-943297-1
+      }
+      if (cuttingTheMustard) {
+        globalSiteSpecificVars.pathToJquery = '/research-computing-with-cpp/js/lib/jquery-2.1.1.min';
+      }
+    </script>
+    <script src="/research-computing-with-cpp/js/lib/require.min.js"></script>
+    <script src="/research-computing-with-cpp/js/main.js"></script>
+    <script>
+      require.config({
+        baseUrl: '/research-computing-with-cpp/js/lib'
+      });
+        require(["app/general", "app/searchWithAutoComplete", "app/tabs"]);//load the default stuff
+    </script>
+</head>
+
+<body id="index" class="layout-vertical layout-vertical--nav-1col">
+
+  <header class="header header--desktop">
+
+  <a class="header__close" href="#">
+    <img src="/research-computing-with-cpp/images/close.png" class="lazy" data-src="//static.ucl.ac.uk/indigo/images/close.png" alt="X" />Close</a>
+
+  <div class="masthead">
+
+  <div class="wrapper clearfix">
+
+      <div class="masthead__search">
+					<form action="#" method="get">
+						<div class="search-form">
+							<input type="search" placeholder="Search UCL websites, people and more" class="search-form__input search-form__input--search" value="">
+						</div>
+						<input type="submit" name="sumbit" value="Go" class="btn search-form__input search-form__input--submit" />
+					</form>
+				</div>
+
+
+				<nav class="masthead__nav m-clear">
+					<ul class="masthead__list">
+						<li class="masthead__item"><a href="index.php" class="masthead__link">UCL Home</a>
+						</li>
+						<li class="masthead__item"><a href="prospective-students.php" class="masthead__link">Prospective students</a>
+						</li>
+						<li class="masthead__item"><a href="current-students.php" class="masthead__link">Current students</a>
+						</li>
+						<li class="masthead__item"><a href="staff.php" class="masthead__link">Staff</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+
+</div><!-- end .masthead -->
+
+
+  <div class="wrapper">
+
+    <div class="photograph">
+  <div class="brand">
+    <p class="brand__heading">MPHY0022: Research Computing with C++</p>
+    <a href="/" class="brand__link"><span class="visually-hidden">Home</span></a>
+    <img src="//cdn.ucl.ac.uk/img/blank.gif" data-src="//static.ucl.ac.uk/indigo/images/ucl-logo.svg" alt="UCL logo" id="logo" class="brand__logo lazy">  
+  </div>
+</div>
+
+
+    <div class="sidebar">
+
+      <nav class="nav nav--mobile">
+        <ul>
+          
+
+
+
+
+        </ul>
+      </nav>
+
+      <nav class="nav nav--left">
+        <ul>
+          
+
+ <li class="active"> <a href="/research-computing-with-cpp/01research/">C++ for Research</a><ul><li class="inactive"> <a href="/research-computing-with-cpp/01research/sec01Research.html">C++ in Research</a> </li> <li class="inactive"> <a href="/research-computing-with-cpp/01research/sec02Git.html">Git</a> </li> <li class="inactive"> <a href="/research-computing-with-cpp/01research/sec03CMake.html">CMake</a> </li> <li class="inactive"> <a href="/research-computing-with-cpp/01research/sec04CMakeBasics.html">CMake Basics</a> </li> <li class="inactive"> <a href="/research-computing-with-cpp/01research/sec05CMakeIntermediate.html">Intermediate CMake</a> </li> <li class="inactive"> <a href="/research-computing-with-cpp/01research/sec06UnitTesting.html">Unit Testing</a> </li> </ul> </li> <li class="active"> <a href="/research-computing-with-cpp/02libraries/">Including Libraries</a><ul> <li class="inactive"> <a href="/research-computing-with-cpp/02libraries/sec01ChoosingLibraries.html">Choosing Libraries</a> </li> <li class="inactive"> <a href="/research-computing-with-cpp/02libraries/sec02LibraryBasics.html">Library Basics</a> </li> <li class="inactive"> <a href="/research-computing-with-cpp/02libraries/sec02LinkingLibraries.html">Linking Libraries</a> </li> <li class="inactive"> <a href="/research-computing-with-cpp/02libraries/sec03UsingLibraries.html">Using Libraries</a> </li> <li class="inactive"> <a href="/research-computing-with-cpp/02libraries/sec04Examples.html">Examples</a> </li> <li class="inactive"> <a href="/research-computing-with-cpp/02libraries/sec05CMakeCatch2.html">CMakeCatch2</a> </li> <li class="inactive"> <a href="/research-computing-with-cpp/02libraries/sec05CMakeCatchTemplate.html">CMakeCatchTemplate</a> </li> <li class="inactive"> <a href="/research-computing-with-cpp/02libraries/sec05Summary.html">Summary</a> </li> </ul> </li><li class="active"> <a href="/research-computing-with-cpp/03cpp/">Better C++</a><ul> <li class="inactive"> <a href="/research-computing-with-cpp/03cpp/sec01LanguageRecap.html">Object Oriented Review</a> </li> <li class="inactive"> <a href="/research-computing-with-cpp/03cpp/sec02EssentialReading.html">Essential Reading</a> </li> <li class="inactive"> <a href="/research-computing-with-cpp/03cpp/sec03TemplatesIntro.html">Templates</a> </li> <li class="inactive"> <a href="/research-computing-with-cpp/03cpp/sec04FunctionTemplates.html">Function Templates</a> </li> <li class="inactive"> <a href="/research-computing-with-cpp/03cpp/sec05ClassTemplates.html">Class Templates</a> </li> <li class="inactive"> <a href="/research-computing-with-cpp/03cpp/sec06MemoryManagement.html">Smart Pointers</a> </li> <li class="inactive"> <a href="/research-computing-with-cpp/03cpp/sec07Exceptions.html">Error Handling</a> </li> </ul> </li> <li class="active"> <a href="/research-computing-with-cpp/03cpppatterns/">Patterns</a><ul><li class="inactive"> <a href="/research-computing-with-cpp/03cpppatterns/sec01RAII.html">RAII Pattern</a> </li> <li class="inactive"> <a href="/research-computing-with-cpp/03cpppatterns/sec02ProgramToInterfaces.html">Program To Interfaces</a> </li> <li class="inactive"> <a href="/research-computing-with-cpp/03cpppatterns/sec07Inheritance.html">Inheritance</a> </li> <li class="inactive"> <a href="/research-computing-with-cpp/03cpppatterns/sec08DependencyInjection.html">Dependency Injection</a> </li> <li class="inactive"> <a href="/research-computing-with-cpp/03cpppatterns/sec09ConstructionPatterns.html">Construction Patterns</a> </li> <li class="inactive"> <a href="/research-computing-with-cpp/03cpppatterns/sec13SummaryOfPatterns.html">Summary</a> </li> </ul> </li> <li class="active"> <a href="/research-computing-with-cpp/04HPC/">HPC Concepts</a><ul></ul> </li> <li class="active"> <a href="/research-computing-with-cpp/05OpenMP/">Shared memory parallelism</a><ul> <li class="inactive"> <a href="/research-computing-with-cpp/05OpenMP/sec01IntroductiontoOpenMP.html">Introduction to OpenMP</a> </li> <li class="inactive"> <a href="/research-computing-with-cpp/05OpenMP/sec02Loops.html">Parallelizing loops with OpenMP</a> </li> <li class="inactive"> <a href="/research-computing-with-cpp/05OpenMP/sec03CriticalLocksRaces.html">Races, Locks and Critical regions</a> </li> <li class="inactive"> <a href="/research-computing-with-cpp/05OpenMP/sec04Tasks.html">Tasks</a> </li> <li class="inactive"> <a href="/research-computing-with-cpp/05OpenMP/sec05SchedulingLoadBalancing.html">Scheduling and Load Balancing</a> </li> <li class="inactive"> <a href="/research-computing-with-cpp/05OpenMP/sec06OpenMPAlternatives.html">Alternatives to OpenMP</a> </li> <li class="inactive"> <a href="/research-computing-with-cpp/05OpenMP/sec07FurtherReading.html">Further Reading</a> </li> <li class="inactive"> <a href="/research-computing-with-cpp/05OpenMP/sec08Exercise.html">Optional Exercise</a> </li></ul> </li><li class="active"> <a href="/research-computing-with-cpp/06MPI/">Distributed memory parallelism</a><ul> <li class="inactive"> <a href="/research-computing-with-cpp/06MPI/sec01practical.html">MPI in practice</a> </li> <li class="inactive"> <a href="/research-computing-with-cpp/06MPI/sec02PointToPoint.html">Point to Point</a> </li> <li class="inactive"> <a href="/research-computing-with-cpp/06MPI/sec03collective.html">Collective communication</a> </li> <li class="inactive"> <a href="/research-computing-with-cpp/06MPI/sec04advanced.html">More advanced MPI</a> </li> </ul> </li> <li class="active"> <a href="/research-computing-with-cpp/07PythonBinding/">Python Binding</a><ul> <li class="inactive"> <a href="/research-computing-with-cpp/07PythonBinding/sec01Binding.html">Python Binding</a> </li> </ul> </li> <li class="active"> <a href="/research-computing-with-cpp/08Summary2019/">Summary 2019</a><ul><li class="inactive"> <a href="/research-computing-with-cpp/08Summary2019/sec01CMake.html">C++ Builder</a> </li> <li class="inactive"> <a href="/research-computing-with-cpp/08Summary2019/sec02Developer.html">C++ Developer</a> </li> <li class="inactive"> <a href="/research-computing-with-cpp/08Summary2019/sec03Language.html">C++ Guru</a> </li> <li class="inactive"> <a href="/research-computing-with-cpp/08Summary2019/sec04Parallelism.html">C++ In Parallel</a> </li></ul> </li> <li class="active"> <a href="/research-computing-with-cpp/88cpplibraries/">Appendix - Libraries</a><ul> <li class="inactive"> <a href="/research-computing-with-cpp/88cpplibraries/sec07EIGEN.html">Eigen</a> </li> <li class="inactive"> <a href="/research-computing-with-cpp/88cpplibraries/sec08Boost.html">Boost</a> </li> <li class="inactive"> <a href="/research-computing-with-cpp/88cpplibraries/sec09ITK.html">ITK</a> </li> <li class="inactive"> <a href="/research-computing-with-cpp/88cpplibraries/sec10Summary.html">Summary</a> </li> </ul> </li> <li class="active"> <a href="/research-computing-with-cpp/90stl/">Appendix - STL</a><ul> <li class="inactive"> <a href="/research-computing-with-cpp/90stl/sec01Intro.html">The Standard Template Library</a> </li> <li class="inactive"> <a href="/research-computing-with-cpp/90stl/sec01Motivation.html">Motivation</a> </li> <li class="inactive"> <a href="/research-computing-with-cpp/90stl/sec02Containers.html">STL Containers</a> </li> <li class="inactive"> <a href="/research-computing-with-cpp/90stl/sec03Other.html">Other STL stuff</a> </li> </ul> </li> <li class="active"> <a href="/research-computing-with-cpp/92TemplateMetaProg/">Appendix - TMP</a><ul><li class="inactive"> <a href="/research-computing-with-cpp/92TemplateMetaProg/sec01TemplateMeta.html">Template Meta-Programming</a> </li></ul> </li> <li class="active"> <a href="/research-computing-with-cpp/93MPIExample/">Appendix - MPI</a><ul> <li class="active"> <a href="/research-computing-with-cpp/93MPIExample/sec01smoothlife.html">Smooth Life</a> </li> <li class="active"> <a href="/research-computing-with-cpp/93MPIExample/sec02domain.html">Domain decomposition</a> </li> <li class="active"> <a href="/research-computing-with-cpp/93MPIExample/sec03halo.html">Halo swap</a> </li> <li class="active"> <a href="/research-computing-with-cpp/93MPIExample/sec04deployment.html">Deployment</a> </li> <li class="active"> <a href="/research-computing-with-cpp/93MPIExample/sec05derived.html">Derived Datatypes</a> </li> <li class="active"> <a href="/research-computing-with-cpp/93MPIExample/sec06overlap.html">Overlap</a> </li> </ul> </li> <li class="active"> <a href="/research-computing-with-cpp/94MPIIO/">Appendix - MPI-I/O</a><ul><li class="inactive"> <a href="/research-computing-with-cpp/94MPIIO/sec01Intro.html">MPI File I/O</a> </li> <li class="inactive"> <a href="/research-computing-with-cpp/94MPIIO/sec01visualise.html">Visualisation</a> </li> <li class="inactive"> <a href="/research-computing-with-cpp/94MPIIO/sec02text.html">Formatted Text IO</a> </li> <li class="inactive"> <a href="/research-computing-with-cpp/94MPIIO/sec03binary.html">Binary IO</a> </li> <li class="inactive"> <a href="/research-computing-with-cpp/94MPIIO/sec04endian.html">Portability</a> </li> <li class="inactive"> <a href="/research-computing-with-cpp/94MPIIO/sec05single.html">Writing from a single process</a> </li> <li class="inactive"> <a href="/research-computing-with-cpp/94MPIIO/sec06mpiio.html">Parallel IO</a> </li></ul> </li> <li class="active"> <a href="/research-computing-with-cpp/95CodeQuality/">Appendix - Code Quality</a><ul> <li class="inactive"> <a href="/research-computing-with-cpp/95CodeQuality/sec01Intro.html">Code Quality</a> </li> <li class="inactive"> <a href="/research-computing-with-cpp/95CodeQuality/sec02editor_tools.html">Tools for pretty code</a> </li> <li class="inactive"> <a href="/research-computing-with-cpp/95CodeQuality/sec03valgrind.html">Memory leaks</a> </li> <li class="inactive"> <a href="/research-computing-with-cpp/95CodeQuality/sec04Performance.html">Profiling a program</a> </li> <li class="inactive"> <a href="/research-computing-with-cpp/95CodeQuality/sec05MicroBenchmarking.html">Micro-benchmarking</a> </li></ul> </li><li class="active"> <a href="/research-computing-with-cpp/96Cloud/">Appendix - Cloud</a><ul> <li class="inactive"> <a href="/research-computing-with-cpp/96Cloud/sec01cloud.html">Cloud computing and big data</a> </li> <li class="inactive"> <a href="/research-computing-with-cpp/96Cloud/sec02exercise1.html">Working in the cloud</a> </li> <li class="inactive"> <a href="/research-computing-with-cpp/96Cloud/sec03exercise2.html">Command line cloud</a> </li> <li class="inactive"> <a href="/research-computing-with-cpp/96Cloud/sec04virtual.html">Virtualisation</a> </li> <li class="inactive"> <a href="/research-computing-with-cpp/96Cloud/sec05exercise3.html">Containers in the Cloud</a> </li> <li class="inactive"> <a href="/research-computing-with-cpp/96Cloud/sec06distributed.html">Distributed computing</a> </li> <li class="inactive"> <a href="/research-computing-with-cpp/96Cloud/sec07exercise4.html">MapReduce</a> </li> <li class="inactive"> <a href="/research-computing-with-cpp/96Cloud/sec08exercise5.html">Distributed computing</a> </li></ul> </li><li class="active"> <a href="/research-computing-with-cpp/97Accelerators/">Appendix - Accelerators</a><ul> <li class="inactive"> <a href="/research-computing-with-cpp/97Accelerators/sec01Index.html">Accelerators</a> </li> <li class="inactive"> <a href="/research-computing-with-cpp/97Accelerators/sec01Introduction.html">CPU Vectorisation</a> </li> <li class="inactive"> <a href="/research-computing-with-cpp/97Accelerators/sec02UsingAGPUAsAnAccelerator.html">Using a GPU as an Accelerator</a> </li> <li class="inactive"> <a href="/research-computing-with-cpp/97Accelerators/sec03Streaming.html">Streaming</a> </li> <li class="inactive"> <a href="/research-computing-with-cpp/97Accelerators/sec04Vectorization.html">Vectorization</a> </li></ul> </li><li class="active"> <a href="/research-computing-with-cpp/98Installation/">Installation</a><ul> <li class="inactive"> <a href="/research-computing-with-cpp/98Installation/sec01linux.html">Linux</a> </li> <li class="inactive"> <a href="/research-computing-with-cpp/98Installation/sec02windows.html">Windows</a> </li> <li class="inactive"> <a href="/research-computing-with-cpp/98Installation/sec03mac.html">Mac</a> </li> <li class="inactive"> <a href="/research-computing-with-cpp/98Installation/sec04boost.html">Boost</a> </li> <li class="inactive"> <a href="/research-computing-with-cpp/98Installation/sec05docker.html">Docker</a> </li></ul> </li><li class="active"> <a href="/research-computing-with-cpp/99Assignments/">Assessment</a><ul></ul> </li> 
+
+        </ul>
+      </nav>
+
+    </div>
+    <!-- end .sidebar -->
+
+    <nav class="nav nav--top">
+      <ul>
+        
+      </ul>
+    </nav>
+
+  </div>
+  <!-- end .wrapper -->
+
+  </header>
+  <!-- end .header -->
+
+  <div class="site-content wrapper">
+
+    <header class="header header--mobile default-header">
+      <a class="header__open" href="#">
+        <img src="/research-computing-with-cpp/images/ucl-menu.svg" alt="Menu" />
+      </a>
+    </header>
+
+    <div class="site-content__inner clearfix">
+      <div class="site-content__body">
+
+          
+            <nav class="breadcrumb clearfix">
+              <ul class="breadcrumb__list">
+                <li class="breadcrumb__item"><a href="http://www.ucl.ac.uk/">UCL</a></li>
+
+  
+    <li class="breadcrumb__item"><a href="http://www.ucl.ac.uk/ISD">ISD</a></li>
+  
+    <li class="breadcrumb__item"><a href="http://www.ucl.ac.uk/isd/services">Our services</a></li>
+  
+    <li class="breadcrumb__item"><a href="http://www.ucl.ac.uk/isd/services/research-it">Research IT</a></li>
+  
+    <li class="breadcrumb__item"><a href="http://www.ucl.ac.uk/isd/services/research-it/training">Training</a></li>
+  
+
+<li class="breadcrumb__item"><a href="/research-computing-with-cpp/">MPHY0022</a></li>
+
+
+
+              </ul>
+            </nav>
+           <div class="site-content__main">
+            
+            
+               <div id="slidelink">
+                 <a href="/research-computing-with-cpp/93MPIExample/sec01smoothlife-reveal.html">Slides</a>
+               </div>
+            
+          
+          
+
+    <h2>Smooth Life</h2>
+
+<h3>Conway&#39;s Game of Life</h3>
+
+<p>The Game of Life is a cellular automaton devised by John Conway in 1970.</p>
+
+<p>A cell, on a square grid, is either alive or dead.
+On the next iteration:</p>
+
+<ul>
+<li>An alive cell:
+
+<ul>
+<li>remains alive if it has 2 or 3 alive neighbours out of 8</li>
+<li>dies (of isolation or overcrowding) otherwise</li>
+</ul></li>
+<li>A dead cell:
+
+<ul>
+<li>becomes alive if it has exactly 3 alive neighbours</li>
+<li>stays dead otherwise</li>
+</ul></li>
+</ul>
+
+<h3>Conway&#39;s Game of Life</h3>
+
+<p>This simple set of rules produces beautiful, complex behaviours:</p>
+
+<p><img src="figures/gun.gif" alt="&quot;Gospers glider gun&quot; by Kieff. Licensed under CC BY-SA 3.0 via Wikimedia Commons."></p>
+
+<h3>Smooth Life</h3>
+
+<p>Smooth Life, proposed by Stephan Rafler, extends this to continuous variables:</p>
+
+<ul>
+<li>The neighbourhood is an integral over a ring centered on a point, $R(r)$.</li>
+<li>The local state is an integral over the disk inside the ring, $D(r)$.</li>
+</ul>
+
+<p><img src="figures/cell_neighbourhood.png" alt="A cell and its neighbourhood"></p>
+
+<p>(The ring has outer radius 3*inner radius, so that the area ratio of 1:8 matches
+the grid version.)</p>
+
+<h3>Smooth Life</h3>
+
+<ul>
+<li>Each point has some degree of &#39;aliveness&#39; in [0, 1]</li>
+<li>At the next timestep
+
+<ul>
+<li>a &#39;fully alive&#39; cell ($D(r)=1$) remains alive if the neighbourhood is within the &#39;death&#39; limits,
+i.e. $d^{(1)} \leq R(r) \leq d^{(2)}$</li>
+<li>a &#39;fully dead&#39; cell ($D(r)=0$) becomes alive if the neighbourhood is within the &#39;birth&#39; limits,
+i.e. $b^{(1)} \leq R(r) \leq b^{(2)}$</li>
+</ul></li>
+<li>We actually define the new aliveness $S(D(r),R(r))$ as a smoothly varying function blending between
+these limiting cases, using a &#39;sigmoid&#39; shape</li>
+</ul>
+
+<h3>Smooth Life on a computer</h3>
+
+<p>We discretise Smooth Life using a grid, so that the integrals become sums.
+The aliveness variable becomes a floating point number.</p>
+
+<p>To avoid the hard-edges of a &quot;ring&quot; and &quot;disk&quot; defined on a grid, we weight the sum
+by the fraction of a cell that would fall inside the ring or disk:</p>
+
+<p>If the distance $d$ from the edge of the ring is within 0.5 units,
+we weight the integral by $2d-1$, so that it smoothly varies from 1 just inside to 0 just outside.</p>
+
+<h3>Smooth Life</h3>
+
+<p>Smooth Life shows even more interesting behaviour:</p>
+
+<p><a href="https://www.youtube.com/watch?v=KJe9H6qS82I">SmoothLifeVideo</a></p>
+
+<ul>
+<li>Gliders moving any direction</li>
+<li>&quot;Tension tubes&quot;</li>
+</ul>
+
+<h3>Exercise</h3>
+
+<p>We will create the following two functions:</p>
+
+<ul>
+<li><p>a function to compute the two integrals $D(r)$ and $R(r)$ as
+$D(x0, y0) = sum_{i, j \in \mathrm{grid}} F(i, j) \mathrm{Disk}(r=||(i - x0, j - y0)||)$
+with $F(i, j)$ the current value at point $(i, j)$</p></li>
+<li><p>the main update function:</p>
+
+<p>loop over all points $(x, y)$ in field:</p>
+
+<ul>
+<li>compute integrals centered at $(x, y)$</li>
+<li>update the field using the transition function</li>
+</ul></li>
+</ul>
+
+<p>All other functions, including the transition function, $\mathrm{Disk}$, etc are given.</p>
+
+<h3>Square domain into a 1-d vector</h3>
+
+<p>We wrap the 2-d grid into a 1-d vector in <strong>row-major</strong> format:</p>
+
+<p>$F(i, j) &lt;==&gt; F(I)$</p>
+
+<p>with $i = I / {N_x}$ and $j = I \% {N_x}$,</p>
+
+<p>with $N_x$ the number of points in direction $x$.</p>
+
+<h3>Distances wrap around a torus</h3>
+
+<p>We use periodic boundary conditions: the field is a torus.</p>
+<div class="highlight"><pre><code class="language-cpp" data-lang="cpp">
+<span class="kt">int</span> <span class="n">Smooth</span><span class="o">::</span><span class="n">TorusDistance</span><span class="p">(</span><span class="kt">int</span> <span class="n">x1</span><span class="p">,</span> <span class="kt">int</span> <span class="n">x2</span><span class="p">,</span> <span class="kt">int</span> <span class="n">size</span><span class="p">)</span> <span class="k">const</span> <span class="p">{</span>
+  <span class="k">auto</span> <span class="k">const</span> <span class="n">remainder</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">abs</span><span class="p">(</span><span class="n">x1</span> <span class="o">-</span> <span class="n">x2</span><span class="p">)</span> <span class="o">%</span> <span class="n">size</span><span class="p">;</span>
+  <span class="k">return</span> <span class="n">std</span><span class="o">::</span><span class="n">min</span><span class="p">(</span><span class="n">remainder</span><span class="p">,</span> <span class="n">std</span><span class="o">::</span><span class="n">abs</span><span class="p">(</span><span class="n">remainder</span> <span class="o">-</span> <span class="n">size</span><span class="p">));</span>
+<span class="p">}</span>
+
+</code></pre></div>
+<h3>Smoothed edge of ring and disk</h3>
+
+<p>$\mathrm{Disk}(r)$:</p>
+<div class="highlight"><pre><code class="language-cpp" data-lang="cpp">
+<span class="kt">double</span> <span class="n">Smooth</span><span class="o">::</span><span class="n">Disk</span><span class="p">(</span><span class="n">distance</span> <span class="n">radius</span><span class="p">)</span> <span class="k">const</span> <span class="p">{</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">radius</span> <span class="o">&gt;</span> <span class="n">inner</span> <span class="o">+</span> <span class="n">smoothing</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span>
+    <span class="k">return</span> <span class="mf">0.0</span><span class="p">;</span>
+  <span class="k">if</span><span class="p">(</span><span class="n">radius</span> <span class="o">&lt;</span> <span class="n">inner</span> <span class="o">-</span> <span class="n">smoothing</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span>
+    <span class="k">return</span> <span class="mf">1.0</span><span class="p">;</span>
+  <span class="k">return</span> <span class="p">(</span><span class="n">inner</span> <span class="o">+</span> <span class="n">smoothing</span> <span class="o">/</span> <span class="mi">2</span> <span class="o">-</span> <span class="n">radius</span><span class="p">)</span> <span class="o">/</span> <span class="n">smoothing</span><span class="p">;</span>
+<span class="p">}</span>
+
+</code></pre></div>
+<h3>Automated tests for mathematics</h3>
+<div class="highlight"><pre><code class="language-cpp" data-lang="cpp">
+  <span class="c1">//! Smooth step function: 0 at -infty, 1 at +infty
+</span>  <span class="k">static</span> <span class="kt">double</span> <span class="n">Sigmoid</span><span class="p">(</span><span class="kt">double</span> <span class="n">variable</span><span class="p">,</span> <span class="kt">double</span> <span class="n">center</span><span class="p">,</span> <span class="kt">double</span> <span class="n">width</span><span class="p">);</span>
+
+</code></pre></div><div class="highlight"><pre><code class="language-cpp" data-lang="cpp">
+  <span class="n">SECTION</span><span class="p">(</span><span class="s">"Sigmoid function is correct"</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kt">double</span> <span class="n">e</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">exp</span><span class="p">(</span><span class="mf">1.0</span><span class="p">);</span>
+    <span class="n">REQUIRE</span><span class="p">(</span><span class="n">Smooth</span><span class="o">::</span><span class="n">Sigmoid</span><span class="p">(</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">4.0</span><span class="p">)</span> <span class="o">==</span> <span class="mf">0.5</span><span class="p">);</span>
+    <span class="n">REQUIRE</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">abs</span><span class="p">(</span><span class="n">Smooth</span><span class="o">::</span><span class="n">Sigmoid</span><span class="p">(</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">4.0</span><span class="p">)</span> <span class="o">-</span> <span class="n">e</span> <span class="o">/</span> <span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="n">e</span><span class="p">))</span> <span class="o">&lt;</span> <span class="mf">0.0001</span><span class="p">);</span>
+    <span class="n">REQUIRE</span><span class="p">(</span><span class="n">Smooth</span><span class="o">::</span><span class="n">Sigmoid</span><span class="p">(</span><span class="mi">10000</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">4.0</span><span class="p">)</span> <span class="o">==</span> <span class="mf">1.0</span><span class="p">);</span>
+    <span class="n">REQUIRE</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">abs</span><span class="p">(</span><span class="n">Smooth</span><span class="o">::</span><span class="n">Sigmoid</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">))</span> <span class="o">&lt;</span> <span class="mf">0.001</span><span class="p">);</span>
+  <span class="p">}</span>
+
+</code></pre></div>
+<h3>Comments</h3>
+
+<p>We can see that this is pretty slow:</p>
+
+<p>If the overall grid is $M$ by $N$, and the range of interaction (3* the inner radius), is $r$, then each time
+step takes $MNr^2$ calculations: if we take all of these proportional as we &quot;fine grain&quot; our
+discretisation (a square domain, and a constant interaction distance in absolute units), the problem grows
+like $N^4$!</p>
+
+<p>So let&#39;s parallelize!</p>
+
+
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+  <!-- end .site-content -->
+
+  <footer class="footer wrapper">
+  <div class="footer__inner clearfix">
+             <article class="block block--col-1">
+                <h2 class="as-h5">Facilities</h2>
+                <ul class="footer__list list-unstyled">
+					<li class="footer__item"><a href="http://www.ucl.ac.uk/departments/faculties">Faculties and departments</a></li>
+					<li class="footer__item"><a href="http://www.ucl.ac.uk/library/">Library</a></li>
+					<li class="footer__item"><a href="http://www.ucl.ac.uk/museums">Museums and Collections</a></li>
+					<li class="footer__item"><a href="http://www.thebloomsbury.com/">UCL Bloomsbury Theatre</a></li>
+					<li class="footer__item"><a href="http://www.ucl.ac.uk/maps">Maps and buildings</a></li>
+				</ul>
+            </article>
+            <article class="block block--col-2">
+                <h2 class="as-h5">Locations</h2>
+                <ul class="footer__list list-unstyled">
+					<li class="footer__item"><a href="http://www.ucl.ac.uk/london">UCL and London</a></li>
+					<li class="footer__item"><a href="http://www.ucl.ac.uk/australia">UCL Australia</a></li>
+					<li class="footer__item"><a href="http://www.ucl.ac.uk/qatar">UCL Qatar</a></li>
+					<li class="footer__item"><a href="http://www.ucl.ac.uk/global">UCL Global</a></li>
+				</ul>
+            </article>
+            <article class="block block--col-3">
+                <h2 class="as-h5">Connect with us</h2>
+                <ul class="footer__list list-unstyled">
+					<li class="footer__item"><a href="http://www.ucl.ac.uk/alumni">Alumni</a></li>
+					<li class="footer__item"><a href="http://www.ucl.ac.uk/enterprise">Businesses</a></li>
+					<li class="footer__item"><a href="http://www.ucl.ac.uk/media">Media Relations</a></li>
+					<li class="footer__item"><a href="http://www.ucl.ac.uk/hr/jobs/">Jobs</a></li>
+					<li class="footer__item"><a href="http://www.ucl.ac.uk/makeyourmark">Give to UCL</a></li>
+				</ul>
+
+      </article>
+  
+    <hr class="clear">
+    <ul class="footer__list list-unstyled zero-bottom">
+      <li class="footer__item text-muted small">University College London,&nbsp;Gower Street,&nbsp;London,&nbsp;WC1E 6BT&nbsp;Tel:&nbsp;+44&nbsp;(0)&nbsp;20 7679 2000</li>
+    </ul>
+    <ul class="list-inline footer__list list-unstyled list-inline--divided">
+      <li class="text-muted small">Copyright © 2019-03-19 14:51:24 +0000 UCL</li>
+      <li class="text-muted small"><a href="#">Disclaimer</a>
+      </li>
+      <li class="text-muted small"><a href="#">Freedom of Information</a>
+      </li>
+      <li class="text-muted small"><a href="#">Accessibility</a>
+      </li>
+      <li class="text-muted small"><a href="#">Privacy</a>
+      </li>
+      <li class="text-muted small"><a href="#">Cookies</a>
+      </li>
+      <li class="text-muted small"><a href="#">Contact Us</a>
+      </li>
+    </ul>
+  </div>
+</footer>
+
+
+  <script src="/research-computing-with-cpp/js/lib/require.min.js"></script>
+  <script src="/research-computing-with-cpp/js/main.js"></script>
+    <script>
+      require.config({
+        baseUrl: '/research-computing-with-cpp/js/lib'
+      });
+        require(["app/general", "app/searchWithAutoComplete", "app/tabs"]);//load the default stuff
+    </script>
+
+</body>
+
+</html>
+
